@@ -123,7 +123,7 @@ function init (callback){
 }
 function hasshowfe(){
     var showPopUp = ggetCookie('2020-festival')
-    if(!false){
+    if(!showPopUp){
         init(function(){
             setHtml(function(){
                 $('.dio').show(300, function(){
