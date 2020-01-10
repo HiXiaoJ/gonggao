@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ce007b-f224-4bb5-8c29-d74c43fed7b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
     </list>
@@ -20,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-792">
-              <caret line="15" selection-start-line="15" selection-start-column="4" selection-end-line="79" selection-end-column="10" />
+            <state relative-caret-position="-997">
+              <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -29,16 +28,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="26" selection-start-column="26" selection-end-column="26" />
+            <state relative-caret-position="460">
+              <caret line="128" column="34" selection-start-line="128" selection-start-column="34" selection-end-line="128" selection-end-column="34" />
               <folding>
                 <element signature="e#43#295#0" />
-                <element signature="n#!!block;n#setHtml#0" />
                 <element signature="n#!!block;n#ssetCookie#0" />
                 <element signature="n#!!block;n#ggetCookie#0" />
                 <element signature="n#!!block;n#setWidth#0" />
                 <element signature="n#!!block;n#init#0" />
-                <element signature="e#4431#5111#0" />
               </folding>
             </state>
           </provider>
@@ -102,6 +99,11 @@
               <item name="gonggao" type="b2602c69:ProjectViewProjectNode" />
               <item name="gonggao" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="gonggao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gonggao" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -140,12 +142,12 @@
       <workItem from="1578619350013" duration="84000" />
       <workItem from="1578619993213" duration="1330000" />
       <workItem from="1578624577064" duration="90000" />
-      <workItem from="1578625363144" duration="3056000" />
+      <workItem from="1578625363144" duration="3342000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16234000" />
+    <option name="totallyTimeSpent" value="16520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -183,23 +185,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-792">
-          <caret line="15" selection-start-line="15" selection-start-column="4" selection-end-line="79" selection-end-column="10" />
+        <state relative-caret-position="-997">
+          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        <state relative-caret-position="460">
+          <caret line="128" column="34" selection-start-line="128" selection-start-column="34" selection-end-line="128" selection-end-column="34" />
           <folding>
             <element signature="e#43#295#0" />
-            <element signature="n#!!block;n#setHtml#0" />
             <element signature="n#!!block;n#ssetCookie#0" />
             <element signature="n#!!block;n#ggetCookie#0" />
             <element signature="n#!!block;n#setWidth#0" />
             <element signature="n#!!block;n#init#0" />
-            <element signature="e#4431#5111#0" />
           </folding>
         </state>
       </provider>

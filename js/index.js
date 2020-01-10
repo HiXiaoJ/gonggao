@@ -19,9 +19,7 @@ function setHtml(callback){
             '        }\n' +
             '        .dio{\n' +
             '            display: none;\n' +
-            '            max-width: 90%;\n' +
             '            height: 100%;\n' +
-            '            margin: 0 auto;\n' +
             '        }\n' +
             '        .dio::after{\n' +
             '            content:\'\';\n' +
@@ -35,8 +33,9 @@ function setHtml(callback){
             '        }\n' +
             '        .mask_2020 {\n' +
             '            display: table;\n' +
-            '            width: 100%;\n' +
+            '            width: 90%;\n' +
             '            height: 100%;\n' +
+            '            margin: 0 auto;\n' +
             '        }\n' +
             '        .dio >.mask_2020> .dio-inblock .cvmask>img{\n' +
             '            max-width: 100%;\n' +
@@ -124,7 +123,7 @@ function init (callback){
 }
 function hasshowfe(){
     var showPopUp = ggetCookie('2020-festival')
-    if(!showPopUp){
+    if(!false){
         init(function(){
             setHtml(function(){
                 $('.dio').show(300, function(){
