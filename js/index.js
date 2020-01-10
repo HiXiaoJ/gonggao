@@ -12,8 +12,16 @@ function setHtml(callback){
     imgLoad(function(img){
         var d = $('<div class="dio">\n' +
             '    <style>\n' +
+            '        body, html{\n' +
+            '            height: 100%;\n' +
+            '            margin: 0;\n' +
+            '            padding: 0;\n' +
+            '        }\n' +
             '        .dio{\n' +
             '            display: none;\n' +
+            '            max-width: 90%;\n' +
+            '            height: 100%;\n' +
+            '            margin: 0 auto;\n' +
             '        }\n' +
             '        .dio::after{\n' +
             '            content:\'\';\n' +
@@ -25,17 +33,21 @@ function setHtml(callback){
             '            z-index: 99;\n' +
             '            background: rgba(0,0,0,.5)\n' +
             '        }\n' +
-            '        .dio > .dio-inblock >img{\n' +
+            '        .mask_2020 {\n' +
+            '            display: table;\n' +
+            '            width: 100%;\n' +
+            '            height: 100%;\n' +
+            '        }\n' +
+            '        .dio >.mask_2020> .dio-inblock .cvmask>img{\n' +
             '            max-width: 100%;\n' +
             '            vertical-align: middle;\n' +
             '        }\n' +
-            '        .dio > .dio-inblock{\n' +
-            '\n' +
-            '            position: absolute;\n' +
+            '        .dio > .mask_2020 .dio-inblock{\n' +
+            '            display: table-cell;\n' +
+            '            vertical-align: middle;\n' +
+            '            text-align: center;\n' +
+            '            position: relative;\n' +
             '            z-index: 100;\n' +
-            '            top: 50%;\n' +
-            '            left: 50%;\n' +
-            '            transform: translate(-50%,-50%);\n' +
             '        }\n' +
             '        .dio .cancel{\n' +
             '            position: absolute;\n' +
@@ -46,19 +58,26 @@ function setHtml(callback){
             '            top: 0;\n' +
             '\n' +
             '        }\n' +
+            '        .cvmask{\n' +
+            '            display: inline-block;\n' +
+            '            position: relative;\n' +
+            '        }\n' +
             '        .notice::selection{background-color: transparent;}\n' +
             '    </style>\n' +
-            '   <div class="dio-inblock">\n' +
+            '    <div class="mask_2020">\n' +
+            '        <div class="dio-inblock">\n' +
+            '            <div class="cvmask">\n' +
+            '                <div class="cancel"></div>\n' +
+            '            </div>\n' +
             '\n' +
-            '       <div class="cancel"></div>\n' +
-            '   </div>\n' +
+            '        </div>\n' +
+            '    </div>\n' +
+            '\n' +
             '\n' +
             '</div>')
 
 
-        $(img).prependTo($(d).find('.dio-inblock'))
-        console.log($(d).find('.dio-inblock')[0])
-        console.log($(d)[0]);
+        $(img).insertBefore($(d).find('.dio-inblock .cvmask .cancel'))
         $('body').append($(d))
         callback && callback()
     })
@@ -105,7 +124,7 @@ function init (callback){
 }
 function hasshowfe(){
     var showPopUp = ggetCookie('2020-festival')
-    if(!false){
+    if(!showPopUp){
         init(function(){
             setHtml(function(){
                 $('.dio').show(300, function(){
@@ -113,12 +132,13 @@ function hasshowfe(){
                 })
                 $(function(){
                     $('.cancel').on('click', function(){
-                        $(".dio").hide(300)
-                        // ssetCookie('2020-festival', 'hide',3600)
+                        $(".dio").hide(300,function(){
+                            $('.dio').remove()
+                            ssetCookie('2020-festival', 'hide',3600)
+                        })
                     })
                     $(window).on('resize', function(){
                         setWidth()
-
                     })
                 })
             })

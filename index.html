@@ -14,47 +14,68 @@
 </head>
 <body>
 <!--<div class="dio">-->
-<!--    <style>-->
-<!--        .dio{-->
-<!--            display: none;-->
-<!--        }-->
-<!--        .dio::after{-->
-<!--            content:'';-->
-<!--            position: fixed;-->
-<!--            top: 0;-->
-<!--            right: 0;-->
-<!--            bottom: 0;-->
-<!--            left: 0;-->
-<!--            z-index: 99;-->
-<!--            background: rgba(0,0,0,.5)-->
-<!--        }-->
-<!--        .dio > .dio-inblock >img{-->
-<!--            max-width: 100%;-->
-<!--            vertical-align: middle;-->
-<!--        }-->
-<!--        .dio > .dio-inblock{-->
+    <!--<style>-->
+        <!--body, html{-->
+            <!--height: 100%;-->
+            <!--margin: 0;-->
+            <!--padding: 0;-->
+        <!--}-->
+        <!--.dio{-->
+            <!--display: none;-->
+            <!--max-width: 90%;-->
+            <!--height: 100%;-->
+            <!--margin: 0 auto;-->
+        <!--}-->
+        <!--.dio::after{-->
+            <!--content:'';-->
+            <!--position: fixed;-->
+            <!--top: 0;-->
+            <!--right: 0;-->
+            <!--bottom: 0;-->
+            <!--left: 0;-->
+            <!--z-index: 99;-->
+            <!--background: rgba(0,0,0,.5)-->
+        <!--}-->
+        <!--.mask_2020 {-->
+            <!--display: table;-->
+            <!--width: 100%;-->
+            <!--height: 100%;-->
+        <!--}-->
+        <!--.dio >.mask_2020> .dio-inblock .cvmask>img{-->
+            <!--max-width: 100%;-->
+            <!--vertical-align: middle;-->
+        <!--}-->
+        <!--.dio > .mask_2020 .dio-inblock{-->
+            <!--display: table-cell;-->
+            <!--vertical-align: middle;-->
+            <!--text-align: center;-->
+            <!--position: relative;-->
+            <!--z-index: 100;-->
+        <!--}-->
+        <!--.dio .cancel{-->
+            <!--position: absolute;-->
+            <!--width: 40px;-->
+            <!--height: 40px;-->
+            <!--cursor: pointer;-->
+            <!--right: 0;-->
+            <!--top: 0;-->
 
-<!--            position: absolute;-->
-<!--            z-index: 100;-->
-<!--            top: 50%;-->
-<!--            left: 50%;-->
-<!--            transform: translate(-50%,-50%);-->
-<!--        }-->
-<!--        .dio .cancel{-->
-<!--            position: absolute;-->
-<!--            width: 40px;-->
-<!--            height: 40px;-->
-<!--            cursor: pointer;-->
-<!--            right: 0;-->
-<!--            top: 0;-->
+        <!--}-->
+        <!--.cvmask{-->
+            <!--display: inline-block;-->
+            <!--position: relative;-->
+        <!--}-->
+        <!--.notice::selection{background-color: transparent;}-->
+    <!--</style>-->
+    <!--<div class="mask_2020">-->
+        <!--<div class="dio-inblock">-->
+            <!--<div class="cvmask">-->
+                <!--<div class="cancel"></div>-->
+            <!--</div>-->
 
-<!--        }-->
-<!--        .notice::selection{background-color: transparent;}-->
-<!--    </style>-->
-<!--   <div class="dio-inblock">-->
+        <!--</div>-->
+    <!--</div>-->
 
-<!--       <div class="cancel"></div>-->
-<!--   </div>-->
 
 <!--</div>-->
 <!--<img src="./images/2020.jpg" alt="" class="notice" draggable="false">-->
